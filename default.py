@@ -404,7 +404,7 @@ if found:
 if not is_mysql:
     our_dbname = 'MyVideos'
 
-    for num in range(114, 35, -1):
+    for num in range(120, 35, -1):
         testname = our_dbname + str(num)
         our_test = db_path + testname + '.db'
 
@@ -493,7 +493,7 @@ if forcedbname:
 if is_mysql and not forcedbname:
     if our_dbname == '': # no db name in advancedsettings
         our_dbname = 'MyVideos'
-        for num in range(114, 35, -1):
+        for num in range(120, 35, -1):
             testname = our_dbname + str(num)
             try:
                 dbglog('Attempting MySQL connection to %s' % testname)
@@ -507,7 +507,7 @@ if is_mysql and not forcedbname:
             except:
                 pass
     else:       # already got db name from ad settings
-        for num in range(114, 35, -1):
+        for num in range(120, 35, -1):
             testname = our_dbname + str(num)
             try:
                 dbglog('Attempting MySQL connection to %s' % testname)
